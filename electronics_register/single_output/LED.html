@@ -1,3 +1,19 @@
 <b><u>Συνδεσμολογία</u></b><<b></b>br>
 Θετικό ποδαράκι του LED –> GPIO 4<<b></b>br>
 Αρνητικό ποδαράκι του LED –> Ground<<b></b>br>
+
+<b><u>Interactive mode</u></b><<b></b>br>
+from gpiozero import LED<<b></b>br>
+myled = LED(4)<<b></b>br>
+myled.on()<<b></b>br>
+myled.off()<<b></b>br>
+
+<b><u>Script mode</u></b><<b></b>br>
+from gpiozero import LED<<b></b>br>
+from time import sleep<<b></b>br>
+myled = LED(4)<<b></b>br>
+while True:<<b></b>br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;    myled.on()<<b></b>br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;    sleep(1)<<b></b>br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;    myled.off()<<b></b>br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;    sleep(1)<<b></b>br>
