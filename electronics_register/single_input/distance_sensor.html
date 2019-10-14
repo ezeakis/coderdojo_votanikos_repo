@@ -1,0 +1,18 @@
+<b><u>Συνδεσμολογία</u></b><br><br>
+GND του αισθητήρα –> GND στο Raspberry Pi και στο άκρο αντίστασης 330 Ω<br><br>
+VCC του αισθητήρα –> 5V στο Raspberry Pi<br><br>
+TRIG του αισθητήρα –> GPIO 17 στο Raspberry Pi<br><br>
+ECHO του αισθητήρα –> στο άκρο αντίστασης 220 Ω<br><br>
+Τα άλλα άκρα των δύο αντιστάσεων –> GPIO 18 του Raspberry Pi<br><br>
+<br><br>
+
+<b><u>Script mode</u></b><br><br>
+from gpiozero import DistanceSensor<br><br>
+from time import sleep<br><br>
+<br><br>
+sensor = DistanceSensor(echo=18, trigger=17)<br><br>
+while True:<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;    print(sensor.distance * 100)<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;    sleep(1)<br><br>
+    
+    
