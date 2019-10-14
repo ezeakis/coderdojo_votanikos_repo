@@ -1,0 +1,8 @@
+<b><u>Συνδεσμολογία</u></b><br><br>
+Μακρύτερο ποδαράκι ή Κόκκινο καλώδιο του buzzer –> GPIO 3 του Raspberry<br><br>
+Κοντύτερο ποδαράκι ή Μαύρο καλώδιο του buzzer –> Ground του Raspberry<br><br>
+<br><br>
+<b><u>Interactive mode</u></b><br><br>
+from gpiozero import Buzzer<br><br>
+b = Buzzer(3)<br><br>
+b.beep(n=2)<br><br>
