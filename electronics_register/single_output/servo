@@ -1,0 +1,22 @@
+<b><u>Συνδεσμολογία</u></b><br><br>
+Κόκκινο/πορτοκαλί καλώδιο του servo –> 5V στο Raspberry Pi<br><br>
+Κίτρινο καλώδιο του servo –> GPIO 17 στο Raspberry Pi<br><br>
+Μαύρο/καφέ καλώδιο του servo –> GND στο Raspberry Pi<br><br>
+<br><br>
+<b><u>Interactive mode</u></b><br><br>
+
+from gpiozero import Servo<br><br>
+servo = Servo(17)<br><br>
+
+Δοκιμάζουμε τις παρακάτω εντολές και παρατηρούμε τι κάνει ο σερβοκινητήρας<br><br>
+servo.min()<br><br>
+servo.mid()<br><br>
+servo.max()<br><br>
+servo.value = -1<br><br>
+servo.value = 1<br><br>
+servo.value = 0.2<br><br>
+
+Αν ο σερβοκινητήρας κάνει θόρυβο και μας ενοχλεί, δίνουμε<br><br>
+servo.detach()<br><br>
+για να τον αποσυνδέσουμε προσωρινά. Αν δώσουμε οποιαδήποτε εντολή από τις παραπάνω ξανασυνδέεται.<br><br>
+
