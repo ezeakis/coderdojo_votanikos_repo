@@ -1,0 +1,26 @@
+<b><u>Συνδεσμολογία</u></b><br><br>
+Θετικό ποδαράκι του LED –> GPIO 4<br><br>
+Αρνητικό ποδαράκι του LED –> Ground<br><br>
+Ένα ποδαράκι του κουμπιού –> GPIO 17<br><br>
+Το άλλο ποδαράκι του κουμπιού –> Ground<br><br>
+<br><br>
+
+<b><u>Script mode (Πρώτος τρόπος)</u></b><br><br>
+from gpiozero import LED, Button<br><br>
+from time import sleep<br><br>
+myled = LED(4)<br><br>
+mybutton = Button(17)<br><br>
+while True:<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;    mybutton.wait_for_press()<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;    myled.toggle()<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;    sleep(1)<br><br>
+
+<b><u>Script mode (Δεύτερος τρόπος)</u></b><br><br>
+from gpiozero import LED, Button<br><br>
+from time import sleep<br><br>
+myled = LED(4)<br><br>
+mybutton = Button(17)<br><br>
+while True:<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;     if mybutton.is_pressed():<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;         myled.toggle()<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;     sleep(1)<br><br>
