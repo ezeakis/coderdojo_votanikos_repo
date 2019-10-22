@@ -1,0 +1,28 @@
+<b><u>Οδηγίες</u></b><br><br>
+Το RGB LED έχει τέσσερα ποδαράκια<br><br>
+Το κοιτάμε ώστε να βλέπουμε μεσαίο (1) - μακρύ (2) - μεσαίο (3) - μικρό (4)<br><br>
+Αν είναι κοινής καθόδου (ρώτησε τον mentor), τότε το μακρύ ποδαράκι είναι για τη Γη και τα υπόλοιπα για τα χρώματα.
+<b><u>Συνδεσμολογία</u></b><br><br>
+Ποδαράκι 1 -> αντίσταση 330 Ωμ -> GPIO 9<br><br>
+Ποδαράκι 2 -> Γη<br><br>
+Ποδαράκι 3 -> αντίσταση 330 Ωμ -> GPIO 10<br><br>
+Ποδαράκι 4 -> αντίσταση 330 Ωμ -> GPIO 11<br><br>
+Θετικό ποδαράκι του LED –> GPIO 4<br><br>
+Αρνητικό ποδαράκι του LED –> Ground<br><br>
+<br><br>
+<b><u>Interactive mode</u></b><br><br>
+from gpiozero import RGBLED
+led = RGBLED(red=9, green=10, blue=11)
+
+led.red = 1
+led.red = 0.5
+
+led.color = (0, 1, 0)
+led.color = (1, 0, 1)
+led.color = (1, 1, 0)
+led.color = (0, 1, 1)
+led.color = (1, 1, 1)
+
+led.color = (0, 0, 0)
+
+(βασισμένο στο https://gpiozero.readthedocs.io/en/stable/recipes.html#full-color-led)
