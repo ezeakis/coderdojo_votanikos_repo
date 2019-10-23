@@ -1,0 +1,17 @@
+<b><u>Συνδεσμολογία</u></b><br><br>
+Κόκκινο του αισθητήρα -> 5 V<br><br>
+Κίτρινο του αισθητήρα -> GPIO 4<br><br>
+Μαύρο του αισθητήρα -> Γη<br><br>
+Μακρύ ποδαράκι του LED -> GPIO 16<br><br>
+Κοντό ποδαράκι του LED -> Γη<br><br>
+<br><br>
+
+<b><u>Script mode</u></b><br><br>
+from gpiozero import MotionSensor, LED<br><br>
+pir = MotionSensor(4)<br><br>
+led = LED(16)
+while True:<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; if pir.is_active:<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; led.on()<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; else:<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; led.off()<br><br>
