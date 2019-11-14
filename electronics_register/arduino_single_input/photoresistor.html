@@ -1,1 +1,32 @@
-a
+<b><u>Υλικά</u></b><br><br>
+1 Arduino<br><br>
+1 τροφοδοτικό<br><br>
+1 αισθητήρα φωτός<br><br>
+1 αντίσταση 100 Ω<br><br>
+1 breadboard<br><br>
+3 καλώδια Male-Male<br><br>
+
+<b><u>Συνδεσμολογία</u></b><br><br>
+1ο άκρο αισθητήρα –> Arduino 3.3V<br><br>
+2o άκρο αισθητήρα –> 1ο άκρο αντίστασης<br><br>
+2o άκρο αισθητήρα –> Arduino A0<br><br>
+2ο άκρο αντίστασης -> Arduino GND<br><br>
+
+<br><br>
+<b><u>Κώδικας</u></b><br><br>
+
+int sensor = 0;
+int light;
+
+void setup()
+{
+  pinMode(sensor, INTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  light = analogRead(sensorPin);
+  Serial.println(light);    // print the number
+  delay(500);
+}
