@@ -5,7 +5,7 @@
 1 αντίσταση 100 Ω<br><br>
 1 breadboard<br><br>
 3 καλώδια Male-Male<br><br>
-
+<br><br>
 <b><u>Συνδεσμολογία</u></b><br><br>
 1ο άκρο αισθητήρα –> Arduino 3.3V<br><br>
 2o άκρο αισθητήρα –> 1ο άκρο αντίστασης<br><br>
@@ -15,18 +15,18 @@
 <br><br>
 <b><u>Κώδικας</u></b><br><br>
 
-int sensor = 0;
-int light;
-
-void setup()
-{
-  pinMode(sensor, INTPUT);
-  Serial.begin(9600);
-}
-
-void loop()
-{
-  light = analogRead(sensorPin);
-  Serial.println(light);    // print the number
-  delay(500);
-}
+int sensor = 0;<br><br>
+int light;<br><br>
+<br><br>
+void setup()<br><br>
+{<br><br>
+&nbsp;&nbsp;pinMode(sensor, INTPUT);<br><br>
+&nbsp;&nbsp;Serial.begin(9600);<br><br>
+}<br><br>
+<br><br>
+void loop()<br><br>
+{<br><br>
+&nbsp;&nbsp;light = analogRead(sensorPin);<br><br>
+&nbsp;&nbsp;Serial.println(light);<br><br>
+&nbsp;&nbsp;delay(500);<br><br>
+}<br><br>
