@@ -3,13 +3,27 @@
 Το κοιτάμε ώστε να βλέπουμε μεσαίο (1) - μακρύ (2) - μεσαίο (3) - μικρό (4)<br><br>
 Αν είναι κοινής καθόδου (ρώτησε τον mentor), τότε το μακρύ ποδαράκι είναι για τη Γη και τα υπόλοιπα για τα χρώματα.<br><br>
 <br><br>
+
+<b><u>Υλικά</u></b><br><br>
+1 Raspberry Pi<br><br>
+1 τροφοδοτικό<br><br>
+1 RaspIO<br><br>
+1 RGB LED<br><br>
+3 αντιστάσεις 100 Ω<br><br>
+1 breadboard<br><br>
+4 καλώδια Male-Female<br><br>
+
+
 <b><u>Συνδεσμολογία</u></b><br><br>
 Ποδαράκι 1 -> αντίσταση 330 Ωμ -> GPIO 9<br><br>
 Ποδαράκι 2 -> Γη<br><br>
 Ποδαράκι 3 -> αντίσταση 330 Ωμ -> GPIO 10<br><br>
 Ποδαράκι 4 -> αντίσταση 330 Ωμ -> GPIO 11<br><br>
-
 <br><br>
+
+
+
+
 <b><u>Interactive mode</u></b><br><br>
 from gpiozero import RGBLED<br><br>
 led = RGBLED(red=9, green=10, blue=11)<br><br>
