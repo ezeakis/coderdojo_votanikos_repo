@@ -1,26 +1,31 @@
+<b><u>Οδηγίες</u></b><br><br>
+Το αν θα χρειαστείς breadboard και τι είδος καλώδια χρειάζονται εξαρτάται από το είδος του κουμπιού<br><br>
+Αν δεν είσαι σίγουρος/σίγουρη, το συζητάς με τον mentor<br><br>
+
 <b><u>Υλικά</u></b><br><br>
 1 Raspberry Pi<br><br>
 1 τροφοδοτικό<br><br>
 1 RaspIO<br><br>
 1 Κουμπί<br><br>
-1 αντίσταση 100 Ω?<br><br>
-1 breadboard<br><br>
-2 καλώδια Male-Female<br><br>
+1 breadboard (εξαρτάται από το κουμπί)<br><br>
+2 καλώδια (εξαρτάται από το κουμπί)<br><br>
 <br><br>
 
 <b><u>Συνδεσμολογία</u></b><br><br>
-Ένα άκρο του κουμπιού -> GPIO 2<br><br>
-Άλλο άκρο του κουμπιού -> Γη<br><br>
+Ένα άκρο του κουμπιού -> Καλώδιο -> GPIO 2<br><br>
+Άλλο άκρο του κουμπιού -> Καλώδιο -> Γη<br><br>
 <br><br>
 
 <b><u>Script mode (πρώτος τρόπος)</u></b><br><br>
 from gpiozero import Button<br><br>
+from time import sleep<br><br>
 button = Button(2)<br><br>
 while True:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;    if button.is_pressed:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print("Το κουμπί είναι πατημένο")<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;    else:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print("Το κουμπί δεν είναι πατημένο")<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;    sleep 1
 <br><br>
 
 <b><u>Script mode (δεύτερος τρόπος)</u></b><br><br>
