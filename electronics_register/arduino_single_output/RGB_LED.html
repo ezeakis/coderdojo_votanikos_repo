@@ -1,0 +1,57 @@
+<b><u>Οδηγίες</u></b><br><br>
+Το RGB LED έχει τέσσερα ποδαράκια<br><br>
+Το κοιτάμε ώστε να βλέπουμε μεσαίο (1) - μακρύ (2) - μεσαίο (3) - μικρό (4)<br><br>
+Αν είναι κοινής καθόδου (ρώτησε τον mentor), τότε το μακρύ ποδαράκι είναι για τη Γη και τα υπόλοιπα για τα χρώματα.<br><br>
+<br><br>
+
+<b><u>Υλικά</u></b><br><br>
+1 Arduino<br><br>
+1 (μπλε) USB καλώδιο (προγραμματισμός και τροφοδοσία)<br><br>
+1 RGB LED<br><br>
+3 αντιστάσεις 330 Ω<br><br>
+1 breadboard<br><br>
+4 καλώδια Male-Male<br><br>
+<br><br>
+
+<b><u>Συνδεσμολογία</u></b><br><br>
+Ποδαράκι 1 -> αντίσταση 330 Ωμ -> Arduino 11<br><br>
+Ποδαράκι 2 -> Γη<br><br>
+Ποδαράκι 3 -> αντίσταση 330 Ωμ -> Arduino 10<br><br>
+Ποδαράκι 4 -> αντίσταση 330 Ωμ -> Arduino 9<br><br>
+
+<br><br>
+<b><u>Κώδικας</u></b><br><br>
+int red_light_pin= 11;<br><br>
+int green_light_pin = 10;<br><br>
+int blue_light_pin = 9;<br><br>
+void setup() {<br><br>
+&nbsp;&nbsp;  pinMode(red_light_pin, OUTPUT);<br><br>
+&nbsp;&nbsp;  pinMode(green_light_pin, OUTPUT);<br><br>
+&nbsp;&nbsp;  pinMode(blue_light_pin, OUTPUT);<br><br>
+}<br><br>
+void loop() {<br><br>
+&nbsp;&nbsp;  RGB_color(255, 0, 0);<br><br>
+&nbsp;&nbsp;  delay(1000);<br><br>
+&nbsp;&nbsp;  RGB_color(0, 255, 0);<br><br>
+&nbsp;&nbsp;  delay(1000);<br><br>
+&nbsp;&nbsp;  RGB_color(0, 0, 255);<br><br>
+&nbsp;&nbsp;  delay(1000);<br><br>
+&nbsp;&nbsp;  RGB_color(255, 255, 125);<br><br>
+&nbsp;&nbsp;  delay(1000);<br><br>
+&nbsp;&nbsp;  RGB_color(0, 255, 255);<br><br>
+&nbsp;&nbsp;  delay(1000);<br><br>
+&nbsp;&nbsp;  RGB_color(255, 0, 255);<br><br>
+&nbsp;&nbsp;  delay(1000);<br><br>
+&nbsp;&nbsp;  RGB_color(255, 255, 0);<br><br>
+&nbsp;&nbsp;  delay(1000);<br><br>
+&nbsp;&nbsp;  RGB_color(255, 255, 255);<br><br>
+&nbsp;&nbsp;  delay(1000);<br><br>
+}<br><br>
+void RGB_color(int red_light_value, int green_light_value, int blue_light_value)<br><br>
+&nbsp;&nbsp; {<br><br>
+&nbsp;&nbsp;  analogWrite(red_light_pin, red_light_value);<br><br>
+&nbsp;&nbsp;  analogWrite(green_light_pin, green_light_value);<br><br>
+&nbsp;&nbsp;  analogWrite(blue_light_pin, blue_light_value);<br><br>
+}<br><br>
+<br><br>
+(βασισμένο στο https://create.arduino.cc/projecthub/muhammad-aqib/arduino-rgb-led-tutorial-fc003e)
