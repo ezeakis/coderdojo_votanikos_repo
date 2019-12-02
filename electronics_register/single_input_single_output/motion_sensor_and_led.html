@@ -1,13 +1,33 @@
+<b><u>Οδηγίες</u></b><br><br>
+Ο αισθητήρας κίνησης λέγεται και PIR (passive IR - δηλαδή παθητικός υπερύθρων)<br><br>
+Όπως κοιτάω τα τρία ποδαράκια από τη μία μεριά της πλακέτας με τον θόλο να βρίσκεται προς τα πανω<br><br>
+Το πρώτο είναι το Pin1, το δεύτερο είναι το Pin2 και το τρίτο είναι το Pin3<br><br>
+Στα άκρα του ο αισθητήρας έχει δύο κίτρινα switches.<br><br>
+Αν η ευαισθησία του δεν είναι καλή (είτε βλέπει συνέχεια να υπάρχει κίνηση, είτε δεν βλέπει καθόλου, μπορούμε να τα γυρίσουμε μέχρι να βρούμε τη σωστή θέση τους.<br><br>
+<br><br>
+
+<b><u>Υλικά</u></b><br><br>
+1 Raspberry Pi<br><br>
+1 τροφοδοτικό<br><br>
+1 RaspIO<br><br>
+1 αισθητήρας κίνησης<br><br>
+1 LED<br><br>
+1 breadboard<br><br>
+3 καλώδια Θηλυκό-Θηλυκό<br><br>
+2 καλώδια Αρσενικό-Θηλυκό<br><br>
+<br><br>
+
 <b><u>Συνδεσμολογία</u></b><br><br>
-Κόκκινο του αισθητήρα -> 5 V<br><br>
-Κίτρινο του αισθητήρα -> GPIO 4<br><br>
-Μαύρο του αισθητήρα -> Γη<br><br>
-Μακρύ ποδαράκι του LED -> GPIO 16<br><br>
-Κοντό ποδαράκι του LED -> Γη<br><br>
+Pin1 του αισθητήρα -> καλώδιο -> Groundτου Raspberry<br><br>
+Pin2 του αισθητήρα -> καλώδιο -> GPIO 4 του Raspberry<br><br>
+Pin3 του αισθητήρα -> καλώδιο > 5 V του Raspberry<br><br>
+Μακρύ ποδαράκι του LED -> GPIO 2<br><br>
+Κοντό ποδαράκι του LED -> Ground<br><br>
 <br><br>
 
 <b><u>Script mode</u></b><br><br>
 from gpiozero import MotionSensor, LED<br><br>
+from time import sleep<br><br>
 pir = MotionSensor(4)<br><br>
 led = LED(16)<br><br>
 while True:<br><br>
@@ -15,3 +35,4 @@ while True:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; led.on()<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp; else:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; led.off()<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; sleep(0.2)<br><br>
