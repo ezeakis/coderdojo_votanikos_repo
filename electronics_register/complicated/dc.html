@@ -40,10 +40,10 @@ driveLeft = PWMOutputDevice(PWM_DRIVE, True, 0, 1000)<br><br>
 reverseLeft = DigitalOutputDevice(REVERSE)<br><br>
  <br><br>
 def Stop():<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = False<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = False<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 0<br><br>
- 
+&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 0<br>
+  <br><br>
 def Forward():<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = True<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = False<br><br>
