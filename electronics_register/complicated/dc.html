@@ -28,7 +28,7 @@ Driver A2 --> δεύτερη άκρη του κινητήρα<br><br>
 <br><br>
 <br><br>
 
-<b><u>Interactive mode</u></b><br><br>
+<b><u>Scripting mode</u></b><br><br>
 from gpiozero import PWMOutputDevice<br><br>
 from gpiozero import DigitalOutputDevice<br><br>
 from time import sleep<br><br>
@@ -39,26 +39,25 @@ driveLeft = PWMOutputDevice(PWM_DRIVE, True, 0, 1000)<br><br>
  forwardLeft = DigitalOutputDevice(FORWARD)<br><br>
 reverseLeft = DigitalOutputDevice(REVERSE)<br><br>
  <br><br>
-def Stop():<br><br>
+def Stop():<br>
 &nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = False<br>
 &nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = False<br>
 &nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 0<br>
   <br><br>
-def Forward():<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = True<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = False<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 1.0<br><br>
+def Forward():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 1.0<br>
  <br><br>
-def Backword():<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = False<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = True<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 1.0<br><br>
+def Backword():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 1.0<br>
  <br><br>
-def main():<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	Stop()<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	Forward()<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	sleep(1)<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;	Backword()<br><br>
+Stop()<br><br>
+Forward()<br><br>
+sleep(1)<br><br>
+Backword()<br><br>
 <br><br>
 <br><br>
 (βασισμένο στο https://www.bluetin.io/dc-motors/motor-driver-raspberry-pi-tb6612fng/)
