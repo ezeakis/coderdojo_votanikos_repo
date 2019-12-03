@@ -5,52 +5,53 @@
 1 RaspIO<br><br>
 1 Driver TB6612FNG<br><br>
 1 DC κινητήρας<br><br>
-? καλώδια ???<br><br>
+8 καλώδια θηλυκό-θηλυκό<br><br>
 <br><br>
 
 
 <b><u>Συνδεσμολογία</u></b><br><br>
-Driver PWMA ή ENA --> Raspberry Pi 21 
-Driver AIN1 ή INA1 --> Raspberry Pi 26
-Driver ΑΙΝ2 ή INA2 --> Raspberry Pi 19
-Driver VM --> Raspberry 5V
-Driver VCC --> Raspberry 5V
-Driver GND --> Raspberry GND
-Driver A1 --> πρώτη άκρη του κινητήρα
-Driver A2 --> δεύτερη άκρη του κινητήρα
-
-Ρεύμα
+Driver PWMA ή ENA --> Raspberry Pi 21 <br><br>
+Driver AIN1 ή INA1 --> Raspberry Pi 26<br><br>
+Driver ΑΙΝ2 ή INA2 --> Raspberry Pi 19<br><br>
+Driver VM --> Raspberry 5V<br><br>
+Driver VCC --> Raspberry 5V<br><br>
+Driver GND --> Raspberry GND<br><br>
+Driver A1 --> πρώτη άκρη του κινητήρα<br><br>
+Driver A2 --> δεύτερη άκρη του κινητήρα<br><br>
+<br><br>
+<br><br>
 
 <b><u>Interactive mode</u></b><br><br>
-from gpiozero import PWMOutputDevice
-from gpiozero import DigitalOutputDevice
-from time import sleep
-PWM_DRIVE = 21
-FORWARD = 26
-REVERSE = 19
-driveLeft = PWMOutputDevice(PWM_DRIVE, True, 0, 1000)
- forwardLeft = DigitalOutputDevice(FORWARD)
-reverseLeft = DigitalOutputDevice(REVERSE)
+from gpiozero import PWMOutputDevice<br><br>
+from gpiozero import DigitalOutputDevice<br><br>
+from time import sleep<br><br>
+PWM_DRIVE = 21<br><br>
+FORWARD = 26<br><br>
+REVERSE = 19<br><br>
+driveLeft = PWMOutputDevice(PWM_DRIVE, True, 0, 1000)<br><br>
+ forwardLeft = DigitalOutputDevice(FORWARD)<br><br>
+reverseLeft = DigitalOutputDevice(REVERSE)<br><br>
+ <br><br>
+def Stop():<br><br>
+&nbsp;	forwardLeft.value = False<br><br>
+&nbsp;	reverseLeft.value = False<br><br>
+&nbsp;	driveLeft.value = 0<br><br>
  
-def Stop():
-	forwardLeft.value = False
-	reverseLeft.value = False
-	driveLeft.value = 0
- 
-def Forward():
-	forwardLeft.value = True
-	reverseLeft.value = False
-	driveLeft.value = 1.0
- 
-def Backword():
-	forwardLeft.value = False
-	reverseLeft.value = True
-	driveLeft.value = 1.0
- 
-def main():
-	Stop()
-	Forward()
-	sleep(1)
-	Backword()
-
+def Forward():<br><br>
+&nbsp;	forwardLeft.value = True<br><br>
+&nbsp;	reverseLeft.value = False<br><br>
+&nbsp;	driveLeft.value = 1.0<br><br>
+ <br><br>
+def Backword():<br><br>
+&nbsp;	forwardLeft.value = False<br><br>
+&nbsp;	reverseLeft.value = True<br><br>
+&nbsp;	driveLeft.value = 1.0<br><br>
+ <br><br>
+def main():<br><br>
+&nbsp;	Stop()<br><br>
+&nbsp;	Forward()<br><br>
+&nbsp;	sleep(1)<br><br>
+&nbsp;	Backword()<br><br>
+<br><br>
+<br><br>
 (βασισμένο στο https://www.bluetin.io/dc-motors/motor-driver-raspberry-pi-tb6612fng/)
