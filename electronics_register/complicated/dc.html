@@ -1,9 +1,7 @@
-
-
-
-
-
-
+<b><u>Οδηγίες</u></b><br><br>
+Πριν δώσουμε την τελική εντολή για να αρχίσει να γυρίζει ο κινητήρας, καλό είναι να τον σηκώσουμε στον αέρα για να μην αρχίσει να χοροπηδάει<br><br>
+Επίσης δεν πειραματιζόμαστε με μεγαλύτερες ταχύτητες από ότι λέει το πρόγραμμα<br><br>
+<br><br>
 
 <b><u>Υλικά</u></b><br><br>
 1 Raspberry Pi<br><br>
@@ -12,7 +10,7 @@
 1 RaspIO<br><br>
 1 Driver TB6612FNG<br><br>
 1 DC κινητήρας<br><br>
-8 καλώδια θηλυκό-θηλυκό<br><br>
+9 καλώδια θηλυκό-θηλυκό<br><br>
 <br><br>
 
 
@@ -23,6 +21,8 @@ Driver ΑΙΝ2 ή INA2 --> Raspberry Pi 19<br><br>
 Driver VM --> Raspberry 5V<br><br>
 Driver VCC --> Raspberry 5V<br><br>
 Driver GND --> Raspberry GND<br><br>
+Driver STBY --> Raspberry 3V<br><br>
+(η παραπάνω συνδεση είναι για να αρχίσει να δουλεύει ο κινητήρας, σε ένα κανονικό κύκλωμα τη συνδέουμε σε ένα κουμπί, εδώ μπορούμε να την έχουμε συνδεδομενη με τα 3V για όσο κάνουμε τις δοκιμές μας)<br><br>
 Driver A1 --> πρώτη άκρη του κινητήρα<br><br>
 Driver A2 --> δεύτερη άκρη του κινητήρα<br><br>
 <br><br>
@@ -35,24 +35,24 @@ from time import sleep<br><br>
 PWM_DRIVE = 21<br><br>
 FORWARD = 26<br><br>
 REVERSE = 19<br><br>
-driveLeft = PWMOutputDevice(PWM_DRIVE, True, 0, 1000)<br><br>
- forwardLeft = DigitalOutputDevice(FORWARD)<br><br>
-reverseLeft = DigitalOutputDevice(REVERSE)<br><br>
- <br><br>
+drive = PWMOutputDevice(PWM_DRIVE, True, 0, 1000)<br><br>
+forward = DigitalOutputDevice(FORWARD)<br><br>
+reverse = DigitalOutputDevice(REVERSE)<br><br>
+<br><br>
 def Stop():<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = False<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = False<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	forward.value = False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	reverse.value = False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	drive.value = 0<br>
   <br><br>
 def Forward():<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = True<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = False<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 1.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	forward.value = True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	reverse.value = False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	drive.value = 0.1<br>
  <br><br>
 def Backward():<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	forwardLeft.value = False<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	reverseLeft.value = True<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	driveLeft.value = 1.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	forward.value = False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	reverse.value = True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	drive.value = 0.1<br>
  <br><br>
 Stop()<br><br>
 Forward()<br><br>
