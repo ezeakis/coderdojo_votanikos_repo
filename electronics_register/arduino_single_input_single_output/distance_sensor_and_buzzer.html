@@ -1,0 +1,53 @@
+<b><u>Υλικά</u></b><br><br>
+1 Arduino<br><br>
+1 (μπλε) USB καλώδιο (προγραμματισμός και τροφοδοσία)<br><br>
+1 Αισθητήρας υπερήχων<br><br>
+1 Buzzer<br><br>
+1 breadboard<br><br>
+6 καλώδια Αρσενικό-Αρσενικό<br><br>
+<br><br>
+
+<b><u>Συνδεσμολογία</u></b><br><br>
+VCC του Αισθητήρα –> Arduino 5V<br><br>
+GND του Αισθητήρα –> Arduino GND<br><br>
+TRIG του Αισθητήρα –> Arduino 13<br><br>
+ECHO του Αισθητήρα –> Arduino 12<br><br>
+Αρνητικό ποδαράκι του Buzzer –> Arduino GND<br><br>
+Θετικό ποδαράκι του Buzzer –> Arduino 5<br><br>
+
+<br><br>
+<b><u>Κώδικας</u></b><br><br>
+int echoPin = 12; // Ο αριθμός για το pin Echo της πλακέτας υπερήχων<br><br>
+int trigPin = 13; // Ο αριθμός για το pin Trigger της πλακέτας υπερήχων<br><br>
+int alarmPin = 5; // Ο αριθμός για το Buzzer<br><br>
+int alarmRange=30; // Η απόσταση στην οποία θα χτυπήσει συναγερμός<br><br>
+float duration, distance; //Ο χρόνος που κάνει ο παλμός να επιστρέψει και η απόσταση που υπολογίζουμε από αυτή<br><br>
+<br><br>
+void setup() {<br><br>
+pinMode(trigPin, OUTPUT); //Το pin για το Trigger<br><br>
+pinMode(echoPin, INPUT); //Το pin για το Echo<br><br>
+pinMode(alarmPin, OUTPUT); //Το pin για το Buzzer<br><br>
+Serial.begin(9600); //επικοινωνία με τη σειριακή οθόνη για να βλέπουμε τα μηνύματα<br><br>
+}<br><br>
+<br><br>
+void loop() {<br><br>
+//Δημιουργία του παλμού που στέλνει ο αισθητήρας<br><br>
+digitalWrite(trigPin, LOW);<br><br>
+delayMicroseconds(2);<br><br>
+digitalWrite(trigPin, HIGH);<br><br>
+delayMicroseconds(10);<br><br>
+digitalWrite(trigPin, LOW);<br><br>
+//Επιστροφή του παλμού και υπολογισμός του χρόνου που χρειάστηκε<br><br>
+duration = pulseIn(echoPin, HIGH);<br><br>
+<br><br>
+//Υπολογισμός της απόστασης (σε cm) από τον χρόνο που έκανε να επιστρέψει ο παλμός και την ταχύτητα του ήχου.<br><br>
+distance = duration/58.2;<br><br>
+<br><br>
+Serial.println(distance,2); //Εμφάνιση της απόστασης στην οθόνη<br><br>
+<br><br>
+if(distance<alarmRange) //Αν η απόσταση είναι μικρότερη από αυτή που θέλουμε<br><br>
+digitalWrite(alarmPin,HIGH); // Άναψε το buzzer<br><br>
+else //αλλιώς<br><br>
+digitalWrite(alarmPin,LOW); // Σβήσε το buzzer<br><br>
+delay(50); //Περίμενε λιγο (50ms) πριν ξαναμετρήσεις<br><br>
+}<br><br>
