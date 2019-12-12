@@ -1,0 +1,28 @@
+<b><u>Οδηγίες</u></b><br><br>
+Το SenseHat θα το τοποθετήσει πάνω στο Raspberry Pi ένας mentor.<br><br>
+<br><br>
+
+<b><u>Υλικά</u></b><br><br>
+1 Raspberry Pi<br><br>
+1 τροφοδοτικό<br><br>
+1 SenseHat<br><br>
+<br><br>
+
+
+<b><u>Interactive mode</u></b><br><br>
+from sense_hat import SenseHat<br><br>
+sense = SenseHat()<br><br>
+sense.show_message("kalimera")<br><br>
+sense.show_message("kalimera", scroll_speed=0.05)<br><br>
+sense.show_letter("a")<br><br>
+sense.clear()<br><br>
+sense.show_message("kalimera", text_colour=(255, 0, 0))<br><br>
+sense.show_message("kalimera", text_colour=(255, 0, 0), back_colour=(0, 0, 255))<br><br>
+<br><br>
+temp = sense.get_temperature()<br>
+sense.show_message(temp)<br>
+<br><br>
+Η τελευταία εντολή θα αποτύχει. Δώσε τις παρακάτω δύο εντολές και μετά ξανά τη show_message. Καταλαβαίνεις τι κάνουν αυτές οι εντολές;
+temp = round(temp, 2)<br>
+temp = str(temp)<br>
+
