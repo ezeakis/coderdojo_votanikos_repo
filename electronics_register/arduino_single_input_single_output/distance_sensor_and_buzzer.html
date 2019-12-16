@@ -29,6 +29,7 @@ void setup() {<br><br>
 pinMode(trigPin, OUTPUT);<br><br>
 pinMode(echoPin, INPUT);<br><br>
 pinMode(alarmPin, OUTPUT);<br><br>
+Serial.begin(9600); //επικοινωνία με τη σειριακή οθόνη για να βλέπουμε τα μηνύματα
 }<br><br>
 <br><br>
 void loop() {<br><br>
@@ -43,6 +44,7 @@ duration = pulseIn(echoPin, HIGH);<br><br>
 <br><br>
 //Υπολογισμός της απόστασης (σε cm) από τον χρόνο που έκανε να επιστρέψει ο παλμός και την ταχύτητα του ήχου.<br><br>
 distance = duration/58.2;<br><br>
+Serial.println(distance,2); <br><br>//Εμφάνιση της απόστασης στην οθόνη
 <br><br>
 if(distance < alarmRange)<br><br>
 digitalWrite(alarmPin,HIGH);<br><br>
