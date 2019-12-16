@@ -44,7 +44,7 @@ duration = pulseIn(echoPin, HIGH);<br><br>
 //Υπολογισμός της απόστασης (σε cm) από τον χρόνο που έκανε να επιστρέψει ο παλμός και την ταχύτητα του ήχου.<br><br>
 distance = duration/58.2;<br><br>
 <br><br>
-if(distance<alarmRange)<br><br>
+if(distance < alarmRange)<br><br>
 digitalWrite(alarmPin,HIGH);<br><br>
 else<br><br>
 digitalWrite(alarmPin,LOW);<br><br>
