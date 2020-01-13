@@ -1,1 +1,63 @@
+<b><u>Υλικά</u></b><br><br>
+1 Arduino<br><br>
+1 (μπλε) USB καλώδιο (προγραμματισμός και τροφοδοσία)<br><br>
+1 breadboard<br><br>
+1 Driver TB6612FNG<br><br>
+1 DC κινητήρας<br><br>
+9 καλώδια αρσενικό-θηλυκό<br><br>
+(προαιρετικά μπαταρία και δεύτερος DC κινητήρας)<br><br>
+<br><br>
 
+<b><u>Συνδεσμολογία</u></b><br><br>
+PWMA του driver -> Arduino 5 (*)<br><br>
+INA1 του driver -> Arduino 2 (*)<br><br>
+INA2 του driver -> Arduino 4 (*)<br><br>
+STBY του driver -> Arduino 9<br><br>
+VM του driver -> Breadboard κόκκινη γραμμή (**)<br><br>
+VCC του driver -> Breadboard κόκκινη γραμμή (**)<br><br>
+GND του driver -> Breadboard μπλε γραμμή<br><br>
+GND του driver -> Breadboard μπλε γραμμή<br><br>
+A01 του driver -> ένα άκρο DC κινητήρα (*)<br><br>
+A02 του driver -> άλλο άκρο DC κινητήρα (*)<br><br>
+<br><br>
+(*) Σε περίπτωση δεύτερου κινητήρα τότε χρησιμοποιείς αντίστοιχα τα PWMB, INB1, INB2, B01, B02<br><br>
+Τότε προφανώς συνδέεις διαφορετικά pins του Arduino.<br><br>
+(**) Αν συνδέσεις παραπάνω από έναν κινητήρα ή δώσεις στον κινητήρα ρεύμα από μπαταρία αντί για το arduino, τότε το VM και το VCC δεν πρέπει να είναι μαζί. <br><br>
+Το VM πρέπει να συνδεθεί στο κόκκινο καλώδιο μίας μπαταρίας και το ένα από το GND στο μαύρο καλώδιο.<br><br>
+Δες μαζί με έναν mentor πως πρέπει να κάνεις τη σύνδεση σε μία τέτοια περίπτωση<br><br>
+<br><br>
+
+<br><br>
+<b><u>Κώδικας</u></b><br><br>
+Ελέγχεις αν το πρόγραμμα του Arduino έχει τη βιβλιοθήκη για τον driver που έχουμε (TB6612FNG).<br><br>
+Αν όχι την κατεβάζεις από εδώ<br><br>
+https://github.com/sparkfun/SparkFun_TB6612FNG_Arduino_Library<br><br>
+και την εγκαθιστάς<br><br>
+<br><br>
+#include <SparkFun_TB6612.h><br><br>
+<br><br>
+#define AIN1 2<br><br>
+#define AIN2 4<br><br>
+#define PWMA 5<br><br>
+#define STBY 9<br><br>
+<br><br>
+const int offsetA = 1;<br><br>
+<br><br>
+Motor motor1 = Motor(AIN1, AIN2, PWMA, offsetA, STBY);<br><br>
+<br><br>
+void setup() {<br><br>
+}<br><br>
+<br><br>
+void loop() {<br><br>
+  motor1.drive(20, 1000);<br><br>
+  motor1.brake();<br><br>
+  delay(1000);<br><br>
+}<br><br>
+<br><br>
+<br><br>
+Πως μπορούμε να κάνουμε τον κινητήρα να κινείται πιο αργά;<br><br>
+Πως μπορεί να κινηθεί από την αντίθετη πλευρά;<br><br>
+Πως μπορεί να κάνει μεγαλύτερα διαλείμματα;<br><br>
+Μπορείς να συνδέσεις δύο κινητήρες;<br><br>
+Μπορείς να συνδέσεις μπαταρία στο κύκλωμα για να δίνει ρεύμα στον κινητήρα αντί για το arduino;<br><br>
+(βασισμένο στο https://www.instructables.com/id/Driving-Small-Motors-With-the-TB6612FNG/)
