@@ -1,0 +1,57 @@
+Στα μαθήματα χρησιμοποούμε αυτόν τον αισθητήρα υπερήχων <br><br>
+https://grobotronics.com/ir-receiver-38khz-tsop38238.html<br><br>
+και αυτό το τηλεχειριστήριο<br><br>
+https://grobotronics.com/ir-remote-control-12-functions.html<br><br>
+
+
+
+<b><u>Υλικά</u></b><br><br>
+1 Arduino<br><br>
+1 μπλε καλώδιο USB<br><br>
+1 αισθητήρα υπερύθυρων<br><br>
+1 τηλεχειριστήριο<br><br>
+1 breadboard<br><br>
+3 καλώδια Male-Male<br><br>
+<br><br>
+
+<b><u>Συνδεσμολογία</u></b><br><br>
+Κοιτάμε τον αισθητήρα από τη μεριά που είναι το "καρούμπαλο".
+1ο άκρο αισθητήρα –> Arduino 11<br><br>
+2o άκρο αισθητήρα –> Arduino 5V<br><br>
+3o άκρο αισθητήρα –> Arduino GND<br><br>
+
+
+
+<br><br>
+<b><u>Κώδικας</u></b><br><br>
+Πριν μεταφέρουμε τον κώδικα χρειάζεται να ελέγξουμε αν υπάρχει η βιβλιοθήκη για τις υπέρυθρες στην εφαρμογή Arduino του υπολογιστή μας. Ζητάμε τη βοήθεια ενός mentor.<br><br>
+Αν δεν υπάρχει την κατεβάζουμε από εδώ<br><br>
+https://github.com/shirriff/Arduino-IRremote<br><br>
+και την προσθέτουμε<br><br>
+<br><br>
+
+#include <IRemote.h><br><br>
+int RECV_PIN = 11;<br><br>
+IRrecv irrecv(RECV_PIN);<br><br>
+decode_results results;<br><br>
+<br><br>
+void setup()<br><br>
+{<br><br>
+  Serial.begin(9600);<br><br>
+  irrecv.enableIRIn(); // Start the receiver<br><br>
+}<br><br>
+<br><br>
+void loop()<br><br>
+{<br><br>
+  if (irrecv.decode(&results))<br><br>
+    {<br><br>
+     Serial.println(results.value, HEX);<br><br>
+     irrecv.resume(); // Receive the next value<br><br>
+    }<br><br>
+}<br><br>
+}<br><br>
+<br><br>
+Ανοίγουμε το παράθυρο "Παρακολούθηση Σειριακής"<br><br>
+Πατάμε τα κουμπιά του τηλεχειριστήριου και παρατηρούμε τις τιμές που εμφανίζει το Arduino για κάθε ένα από αυτά.<br><br>
+Πως αλλάζουν τα πράγματα αν χρησιμοποιήσεις το pin 12 αντί για το pin 11 για την κατασκευή σου;<br><br>
+Ποια είναι η εντολή που εμφανίζει στην οθόνη τον κωδικό του τηλεχειριστηρίου;<br><br>
