@@ -1,0 +1,43 @@
+<b><u>Υλικά</u></b><br><br>
+1 Arduino<br><br>
+1 (μπλε) USB καλώδιο (προγραμματισμός και τροφοδοσία)<br><br>
+1 Σερβοκινητήρας<br><br>
+3 καλώδια Αρσενικό-Αρσενικό<br><br>
+<br><br>
+
+<b><u>Συνδεσμολογία</u></b><br><br>
+Κόκκινο/πορτοκαλί καλώδιο του servo –> καλώδιο -> Arduino 5V<br><br>
+Κίτρινο καλώδιο του servo καλώδιο -> καλώδιο –> Arduino 9<br><br>
+Μαύρο/καφέ καλώδιο του servo καλώδιο -> καλώδιο –> Arduino GND<br><br>
+
+
+<br><br>
+<b><u>Κώδικας</u></b><br><br>
+#include <Servo.h><br><br>
+<br><br>
+Servo myservo;  <br><br>
+<br><br>
+int pos = 0;   <br><br>
+<br><br>
+void setup() {<br><br>
+  myservo.attach(9);  <br><br>
+}<br><br>
+<br><br>
+void loop() {<br><br>
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees<br><br>
+    // in steps of 1 degree<br><br>
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'<br><br>
+    delay(15);                       // waits 15ms for the servo to reach the position<br><br>
+  }<br><br>
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees<br><br>
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'<br><br>
+    delay(15);                       // waits 15ms for the servo to reach the position<br><br>
+  }<br><br>
+}<br><br>
+<br><br>
+}<br><br>
+<br><br>
+Ο σερβοκινητήρας κινείται από 0 έως 180 μοίρες. Πως μπορούμε να τον κάνουμε να κινηθεί από 20 έως 160;<br><br>
+Πως μπορούμε να κάνουμε τον σερβοκινητήρα να κινείται πιο αργά;<br><br>
+Πως μπορούμε να τον κάνουμε να πηγαίνει στις 45 μοίρες και τις 135 μοίρες εναλλάξ;<br><br>
+(βασισμένο στο https://www.arduino.cc/en/Tutorial/Sweep)
