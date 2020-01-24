@@ -34,7 +34,7 @@ https://github.com/shirriff/Arduino-IRremote<br><br>
 και την προσθέτουμε<br><br>
 <br><br>
 
-#include &lt;IRemote.h&gt;<br><br>
+#include &lt;IRremote.h&gt;<br><br>
 int RECV_PIN = 11;<br><br>
 IRrecv irrecv(RECV_PIN);<br><br>
 decode_results results;<br><br>
@@ -53,9 +53,8 @@ void loop()<br><br>
      irrecv.resume(); // Receive the next value<br><br>
     }<br><br>
 }<br><br>
-}<br><br>
 <br><br>
-Ανοίγουμε το παράθυρο "Παρακολούθηση Σειριακής"<br><br>
+Ανοίγουμε το παράθυρο "Εργαλεία / Παρακολούθηση Σειριακής" ή "Tools / Serial Monitor"<br><br>
 Πατάμε τα κουμπιά του τηλεχειριστήριου και παρατηρούμε τις τιμές που εμφανίζει το Arduino για κάθε ένα από αυτά.<br><br>
 Πως αλλάζουν τα πράγματα αν χρησιμοποιήσεις το pin 12 αντί για το pin 11 για την κατασκευή σου;<br><br>
 Ποια είναι η εντολή που εμφανίζει στην οθόνη τον κωδικό του τηλεχειριστηρίου;<br><br>
