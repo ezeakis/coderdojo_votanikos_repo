@@ -12,7 +12,9 @@
 
 6 καλώδια Αρσενικό-Αρσενικό
 
-9 καλώδια Αρσενικό-Θηλυκό
+8 καλώδια Αρσενικό-Θηλυκό
+
+2 καλώδια Θηλυκό - Θηλυκό
 
 1 Σερβοκινητήρας
 
@@ -44,11 +46,11 @@
 
 PWMA του driver -> Arduino 5
 
-INA1 του driver -> Arduino 2
+AIN1 του driver -> Arduino 2
 
-INA2 του driver -> Arduino 4
+AIN2 του driver -> Arduino 4
 
-STBY του driver -> Arduino 9 --> άλλο
+STBY του driver -> Arduino 10
 
 VM του driver -> Breadboard κόκκινη γραμμή(*)
 
@@ -104,7 +106,7 @@ int RECV_PIN = 11;
 
 #define PWMA 5
 
-#define STBY 9 --> άλλο
+#define STBY 10
 
 IRrecv irrecv(RECV_PIN);
 
