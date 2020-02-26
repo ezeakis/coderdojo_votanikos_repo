@@ -1,6 +1,6 @@
 ### Υλικά
 
-1 Arduino
+1 Arduino ή Funduino
 
 1 μπλε καλώδιο USB
 
