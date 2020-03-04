@@ -58,6 +58,10 @@ VCC του driver -> Breadboard 2η κόκκινη γραμμή
 
 GND του driver -> Breadboard 1η μπλε γραμμή
 
+Breadboard 1η κόκκινη γραμμή -> Κόκκινο καλώδιο θήκης μπαταριών
+
+Breadboard 1η μπλε γραμμή -> Μαύρο καλώδιο θήκης μπαταριών
+
 Breadboard 2η κόκκινη γραμμή -> Arduino 5V
 
 Breadboard 2η μπλε γραμμή -> Arduino Ground
