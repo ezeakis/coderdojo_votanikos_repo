@@ -17,4 +17,6 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/electronics_regi
 IR και Servo και DC κινητήρας
 https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/electronics_register/arduino_complicated/ir_and_servo_and_dc_motor.md
 
+IR και 2 DC κινητήρες
+https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/electronics_register/arduino_complicated/ir_and_2_dc_motors.md
 </details>
