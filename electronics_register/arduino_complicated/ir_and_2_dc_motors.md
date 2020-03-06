@@ -157,34 +157,34 @@ void loop()
      
      if (results.value == 1000) {
      
-     motor1.drive(20, 1000); 
+     motor1.drive(255, 1000); 
 
-     motor2.drive(20, 1000); 
+     motor2.drive(255, 1000); 
 
      
      }
      
      else if (results.value == 1001) {
      
-     motor1.drive(-20, 1000); 
+     motor1.drive(-255, 1000); 
 
-     motor2.drive(-20, 1000); 
+     motor2.drive(-255, 1000); 
      
      }
 
      else if (results.value == 1002) {
      
-     motor1.drive(20, 1000); 
+     motor1.drive(255, 1000); 
 
-     motor2.drive(-20, 1000); 
+     motor2.drive(-255, 1000); 
      
      }
 
      else if (results.value == 1003) {
      
-     motor1.drive(-20, 1000); 
+     motor1.drive(-255, 1000); 
 
-     motor2.drive(20, 1000); 
+     motor2.drive(255, 1000); 
      
      }
 
