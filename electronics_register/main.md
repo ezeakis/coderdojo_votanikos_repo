@@ -20,3 +20,6 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/electronics_regi
 IR και 2 DC κινητήρες
 https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/electronics_register/arduino_complicated/ir_and_2_dc_motors.md
 </details>
+
+IR και 2 DC κινητήρες (μικρό breadboard)
+https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/electronics_register/arduino_complicated/ir_and_2_dc_motors_small_breadboard.md
