@@ -1,7 +1,5 @@
 # Οδηγίες για τη δημιουργία λογαριασμού γονιού και παιδιού στο ClassDojo
 
-Πριν ξεκινήσετε βεβαιωθείτε ότι σας έχω στείλει τον Κωδικό Τάξης για το παιδί
-
 Στην αρχή λαμβάνετε ένα email. Πατάτε στο link που βρίσκετε μέσα.
 
 ![Classdojo Parents Instructions](classdojo_parent1.png)
@@ -62,7 +60,7 @@
 
 ![Classdojo Parents Instructions](classdojo_parent15.png)
 
-Συμπληρώνει τον Κωδικό Τάξης και πατάει "Submit Code"
+Συμπληρώνει τον Κωδικό Τάξης και πατάει "Submit Code". Αν δεν τον έχετε μου τον ζητάτε.
 
 ![Classdojo Parents Instructions](classdojo_parent16.png)
 
