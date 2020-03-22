@@ -1,5 +1,7 @@
 #Οδηγίες για τη δημιουργία λογαριασμού γονιού και παιδιού στο ClassDojo
 
+Πριν ξεκινήσετε βεβαιωθείτε ότι σας έχω στείλει τον Κωδικό Τάξης για το παιδί
+
 Στην αρχή λαμβάνετε ένα email. Πατάτε στο link που βρίσκετε μέσα.
 ![Classdojo Parents Instructions](classdojo_parent1.png)
 
@@ -12,7 +14,7 @@
 Αυτή είναι η εικόνα που έχετε ως γονιός. Έχει ολοκληρωθεί η εγγραφή σας.
 ![Classdojo Parents Instructions](classdojo_parent4.png)
 
-Αποσυνδέεστε για να εγγραφεί το παιδί
+Σε αυτές τις οδηγίες θεωρούμε ότι εσείς και το παιδί κάνετε τις ενέργειες από τον ίδιο υπολογιστή. Οπότε κάθε φορά θα χρειάζεται να αποσυνδέεται ο ένας για να κάνει ενέργειες ο άλλος. Αν έχετε διαφορετικό υπολογιστή αγνοείτε τις οδηγίες που αφορούν αποσύνδεση/σύνδεση και συνεχίζετε κανονικά με τις υπόλοιπες οδηγίες. Εν προκειμένω λοιπόν, αν είσαστε στον ίδιο υπολογιστή, αποσυνδέεστε για να εγγραφεί το παιδί. 
 ![Classdojo Parents Instructions](classdojo_parent5.png)
 
 Το παιδί επιλέγει στην αρχική σελίδα Student
@@ -39,10 +41,14 @@
 Αν δεν είστε ήδη συνδεδεμένς, θα σας ζητήσει να συνδεθείτε. Σε αυτό το ενδεχόμενο, αφού συνδεθείτε, ίσως χρειαστείτε να επιστρέψετε στο email και να πατήσετε για δεύτερη φορά το "Activate Account"
 ![Classdojo Parents Instructions](classdojo_parent13.png)
 
-Κάτω από το Complete Activation πατάτε "Activate Account"
+Κάτω από το Complete Activation πατάτε "Activate Account". Αποσυνδέεστε.
 ![Classdojo Parents Instructions](classdojo_parent14.png)
 
-
+Το παιδί συνδέεται και πατάει "Add a class"
 ![Classdojo Parents Instructions](classdojo_parent15.png)
+
+Συμπληρώνει τον Κωδικό Τάξης και πατάει "Submit Code"
 ![Classdojo Parents Instructions](classdojo_parent16.png)
+
+Και είναι έτοιμο!
 ![Classdojo Parents Instructions](classdojo_parent17.png)
