@@ -1,6 +1,6 @@
 # Οδηγίες για τη δημιουργία λογαριασμού γονιού και παιδιού στο ClassDojo
 
-Στην αρχή λαμβάνετε ένα email. Πατάτε στο link που βρίσκετε μέσα.
+Στην αρχή λαμβάνετε ένα email. Πατάτε στο link που βρίσκεται μέσα.
 
 ![Classdojo Parents Instructions](classdojo_parent1.png)
 
