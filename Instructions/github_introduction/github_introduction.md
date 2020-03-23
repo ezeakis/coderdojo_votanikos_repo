@@ -1,5 +1,6 @@
 Πως μπαίνω στον λογαριασμό GitHub;
 
+![Github Introduction](github_introduction1.png)
  Μπαίνω στη σελίδα https://github.com
  
    Πατάω sign in
@@ -37,3 +38,14 @@
  
  
 ![Github Introduction](github_introduction1.png)
+![Github Introduction](github_introduction2.png)
+![Github Introduction](github_introduction3.png)
+![Github Introduction](github_introduction4.png)
+![Github Introduction](github_introduction5.png)
+![Github Introduction](github_introduction6.png)
+![Github Introduction](github_introduction7.png)
+![Github Introduction](github_introduction8.png)
+![Github Introduction](github_introduction9.png)
+![Github Introduction](github_introduction10.png)
+![Github Introduction](github_introduction11.png)
+![Github Introduction](github_introduction12.png)
