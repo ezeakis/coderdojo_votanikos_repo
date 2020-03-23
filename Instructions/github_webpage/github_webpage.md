@@ -44,29 +44,30 @@
 
 Επιστρέφουμε στον κώδικα πατώντας "Code".
 
+![Github Webpage](github_webpage7.png)
+
 Τα τρία αρχεία με τα οποία μπορούμε να επεξεργαστούμε τη συγκεκριμένη ιστοσελίδα είναι τα index.html, style.css και kitten.jpg
 
 Πατάμε το index.html
 
-![Github Webpage](github_webpage7.png)
+![Github Webpage](github_webpage8.png)
 
 Θα αλλάξουμε το "Chocolate Eclair" σε ένα άλλο γλυκό
 
-![Github Webpage](github_webpage8.png)
+![Github Webpage](github_webpage9.png)
 
 Πατάμε το μολύβι πάνω δεξιά για να επεξεργαστούμε το αρχείο
 
-![Github Webpage](github_webpage9.png)
+![Github Webpage](github_webpage10.png)
 
 Αλλάζουμε το "Chocolate Eclair" σε ό,τι θέλουμε, πχ "Σοκολατόπιτα".
 
 Προσέχουμε να αλλάξουμε μόνο το κείμενο και όχι τα tags <li> και </li>, που είναι δεξιά και αριστερά του
 
-![Github Webpage](github_webpage10.png)
+![Github Webpage](github_webpage11.png)
 
 Πάμε πιο κάτω στη σελίδα και πατάμε "Commit Changes" για να οριστικοποιηθούν οι αλλαγές.
 
-![Github Webpage](github_webpage11.png)
 ![Github Webpage](github_webpage12.png)
 
 Επιστρέφουμε στην ιστοσελίδα. Μερικές φορές χρειάζεται χρόνο για να εμφανιστεί η αλλαγή. Μπορεί να χρειαστεί να πατήσουμε F5 ή Ctrl+F5 για να τη βοηθήσουμε.
