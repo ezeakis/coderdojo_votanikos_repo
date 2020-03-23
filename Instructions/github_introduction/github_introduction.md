@@ -35,24 +35,20 @@
 Αν είχαμε ένα πιάτο με λαχταριστές τηγανιτές πατάτες τι θα χρειαζόμασταν για να τις τσιμπήσουμε ;
 Όοοχι με το χεράκι!
  
-
-
+![Github Introduction](github_introduction6.png)
 
 Μα φυσικά ένα πιρούνι (fork)!
 
-                               
+![Github Introduction](github_introduction7.png)
+![Github Introduction](github_introduction8.png)
+![Github Introduction](github_introduction9.png)
                                    
 Πάμε να το κάνουμε!
 Πατάμε το κουμπάκι fork
 
+![Github Introduction](github_introduction10.png)
  
 Μόλις το κάνουμε, μεταφερόμαστε στην σελίδα μας όπου βλέπουμε το αντίγραφο που μόλις δημιουργήσαμε…
  
- 
-![Github Introduction](github_introduction6.png)
-![Github Introduction](github_introduction7.png)
-![Github Introduction](github_introduction8.png)
-![Github Introduction](github_introduction9.png)
-![Github Introduction](github_introduction10.png)
 ![Github Introduction](github_introduction11.png)
 ![Github Introduction](github_introduction12.png)
