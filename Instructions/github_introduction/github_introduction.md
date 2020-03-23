@@ -55,4 +55,6 @@
 
 ![Github Introduction](github_introduction12.png)
 
+Πιθανόν να μας εμφανίσει το παρακάτω παράθυρο. Πατάμε dismiss.
+
 ![Github Introduction](github_introduction13.png)
