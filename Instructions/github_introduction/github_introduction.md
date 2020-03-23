@@ -1,11 +1,16 @@
-Πως μπαίνω στον λογαριασμό GitHub;
+# Εισαγωγή στο Github
+
+## Πως μπαίνω στον λογαριασμό GitHub;
 
 ![Github Introduction](github_introduction1.png)
  Μπαίνω στη σελίδα https://github.com
  
+![Github Introduction](github_introduction1.png)
+![Github Introduction](github_introduction1.png)
    Πατάω sign in
 
- 
+ ![Github Introduction](github_introduction2.png)
+
 
    Συμπληρώνω το mail μου, τον κωδικό μου και πατάω sign in!!!
 
@@ -37,8 +42,6 @@
 Μόλις το κάνουμε, μεταφερόμαστε στην σελίδα μας όπου βλέπουμε το αντίγραφο που μόλις δημιουργήσαμε…
  
  
-![Github Introduction](github_introduction1.png)
-![Github Introduction](github_introduction2.png)
 ![Github Introduction](github_introduction3.png)
 ![Github Introduction](github_introduction4.png)
 ![Github Introduction](github_introduction5.png)
