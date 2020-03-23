@@ -75,3 +75,6 @@
 Τελικά όμως θα δούμε το γλυκό που δηλώσαμε!
 
 ![Github Webpage](github_webpage13.png)
+
+Σημείωση: Το συγκεκριμένο μάθημα έχει στηριχθεί στο παρακάτω μάθημα της Raspberry Pi Foundation
+https://projects.raspberrypi.org/el-GR/projects/magazine
