@@ -52,7 +52,7 @@
 
 ![Github Webpage](github_webpage8.png)
 
-Θα αλλάξουμε το "Chocolate Eclair" σε ένα άλλο γλυκό
+Εντοπίζουμε το "Chocolate Eclair" που είχαμε δει στην ιστοσελίδα. Αυτό θα αλλάξουμε.
 
 ![Github Webpage](github_webpage9.png)
 
