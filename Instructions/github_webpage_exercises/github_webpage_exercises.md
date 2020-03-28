@@ -8,7 +8,7 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 
 ![Github Webpage Exercises](github_webpage_exercises1.png)
 
-Η πρώτη αλλαγή για γίνει στο αρχείο index.html. Το επιλέγουμε.
+Η πρώτη αλλαγή θα γίνει στο αρχείο index.html. Το επιλέγουμε.
 
 ![Github Webpage Exercises](github_webpage_exercises2.png)
 
@@ -17,6 +17,7 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 ![Github Webpage Exercises](github_webpage_exercises3.png)
 
 Πατάμε το edit
+
 ![Github Webpage Exercises](github_webpage_exercises4.png)
 
 Προσθέτουμε το έκτο γλυκό
@@ -26,12 +27,32 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 Πατάμε commit
 
 ![Github Webpage Exercises](github_webpage_exercises6.png)
+
+Επιστρέφουμε στο repository
+
 ![Github Webpage Exercises](github_webpage_exercises7.png)
+
+Για την επόμενη αλλαγή θα πάμε στο αρχείο style.css
+
 ![Github Webpage Exercises](github_webpage_exercises8.png)
+
+Εντοπίζουμε το σημείο που είναι τα χρώματα
+
 ![Github Webpage Exercises](github_webpage_exercises9.png)
+
+Πατάμε το edit
+
 ![Github Webpage Exercises](github_webpage_exercises10.png)
+
+Αλλάζουμε τα χρώματα
+
 ![Github Webpage Exercises](github_webpage_exercises11.png)
+
+Πατάμε commit
+
 ![Github Webpage Exercises](github_webpage_exercises12.png)
+
+
 ![Github Webpage Exercises](github_webpage_exercises13.png)
 ![Github Webpage Exercises](github_webpage_exercises14.png)
 ![Github Webpage Exercises](github_webpage_exercises15.png)
