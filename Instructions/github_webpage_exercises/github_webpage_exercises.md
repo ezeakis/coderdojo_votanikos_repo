@@ -52,50 +52,16 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 
 ![Github Webpage Exercises](github_webpage_exercises12.png)
 
-Επιστρέφουμε στο repository
 
 ![Github Webpage Exercises](github_webpage_exercises13.png)
-
-Πατάμε upload files
-
 ![Github Webpage Exercises](github_webpage_exercises14.png)
-
-Πατάμε choose your files
-
 ![Github Webpage Exercises](github_webpage_exercises15.png)
-
-Επιλέγουμε το αρχείο που θέλουμε να χρησιμοποιήσουμε και πατάμε "άνοιγμα"
-
 ![Github Webpage Exercises](github_webpage_exercises16.png)
-
-Περιμένουμε να ανέβει και μετά πατάμε commit
-
 ![Github Webpage Exercises](github_webpage_exercises17.png)
-
-Βλέπουμε ότι τοποθετήθηκε στο repository. Σημειώνουμε το ακριβές όνομα του αρχείου (προσέχουμε και την κατάληξη και το αν είναι κεφαλαία τα γράμματα ή μικρά)
-
 ![Github Webpage Exercises](github_webpage_exercises18.png)
-
-Πατάμε το index.html
-
 ![Github Webpage Exercises](github_webpage_exercises19.png)
-
-Εντοπίζουμε το σημείο στο οποίο βρίσκεται η εικόνα
-
 ![Github Webpage Exercises](github_webpage_exercises20.png)
-
-Πατάμε edit
-
 ![Github Webpage Exercises](github_webpage_exercises21.png)
-
-Αλλάζουμε το κείμενο της εικόνας
-
 ![Github Webpage Exercises](github_webpage_exercises22.png)
-
-Πατάμε commit
-
 ![Github Webpage Exercises](github_webpage_exercises23.png)
-
-Και οι τρεις αλλαγές μας έχουν συμβεί!
-
 ![Github Webpage Exercises](github_webpage_exercises24.png)
