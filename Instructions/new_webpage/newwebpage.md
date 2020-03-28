@@ -1,6 +1,10 @@
 # Δημιουργία απλής ιστοσελίδας με εικόνα και κείμενο
 
-# Δημιουργία repository
+
+
+<details>
+  <summary>Δημιουργία repository</summary>
+
 
 Συνδεόμαστε στο https://github.com με τα στοιχεία μας.
 
@@ -14,7 +18,13 @@
 
 ![New Webpage](new_webpage2.png)
 
-# Ανέβασμα εικόνας
+</details>
+
+
+<details>
+  <summary>Ανέβασμα εικόνας</summary>
+
+
 
 Επιλέγουμε "Upload Files"
 
@@ -36,7 +46,11 @@
 
 ![New Webpage](new_webpage7.png)
 
-# Δημιουργία html αρχείου
+</details>
+
+
+<details>
+  <summary>Δημιουργία html αρχείου</summary>
 
 Πατάμε "Create new file"
 
@@ -86,3 +100,4 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 
 ![New Webpage](new_webpage12.png)
 
+</details>
