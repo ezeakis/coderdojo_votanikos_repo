@@ -4,7 +4,7 @@
 
 
 <details>
-  <summary>Πως μπαίνω στον λογαριασμό GitHub;</summary>
+  <summary>## Πως μπαίνω στον λογαριασμό GitHub;</summary>
 
 
 ![Github Introduction](github_introduction1.png)
@@ -37,7 +37,7 @@
 
 
 <details>
-  <summary>Πως μπορώ να αντιγράψω το περιεχόμενο της σελίδας;</summary>
+  <summary>## Πως μπορώ να αντιγράψω το περιεχόμενο της σελίδας;</summary>
 
 
 
