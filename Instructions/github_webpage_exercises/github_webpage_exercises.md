@@ -4,27 +4,11 @@
 
 https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/github_webpage/github_webpage.md
 
-Θα κάνουμε τρεις αλλαγές στη σελίδα: θα προσθέσουμε ένα έκτο γλυκό, θα αλλάξουμε τα χρώματα του banner και θα αλλάξουμε τη φωτογραφία της γάτας
-
 ![Github Webpage Exercises](github_webpage_exercises1.png)
-
-Η πρώτη αλλαγή για γίνει στο αρχείο index.html. Το επιλέγουμε.
-
 ![Github Webpage Exercises](github_webpage_exercises2.png)
-
-Εντοπίζουμε το σημείο που είναι τα γλυκά
-
 ![Github Webpage Exercises](github_webpage_exercises3.png)
-
-Πατάμε το edit
 ![Github Webpage Exercises](github_webpage_exercises4.png)
-
-Προσθέτουμε το έκτο γλυκό
-
 ![Github Webpage Exercises](github_webpage_exercises5.png)
-
-Πατάμε commit
-
 ![Github Webpage Exercises](github_webpage_exercises6.png)
 ![Github Webpage Exercises](github_webpage_exercises7.png)
 ![Github Webpage Exercises](github_webpage_exercises8.png)
