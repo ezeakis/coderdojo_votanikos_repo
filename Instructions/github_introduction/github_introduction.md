@@ -1,11 +1,6 @@
 # Είσοδος στο Github και δημιουργία αντιγράφου repository
 
-
-
-
-<details>
-  <summary>## Πως μπαίνω στον λογαριασμό GitHub;</summary>
-
+## Πως μπαίνω στον λογαριασμό GitHub;
 
 ![Github Introduction](github_introduction1.png)
  Μπαίνω στη σελίδα https://github.com
@@ -33,14 +28,7 @@
 
 ![Github Introduction](github_introduction5.png)
 
-</details>
-
-
-<details>
-  <summary>## Πως μπορώ να αντιγράψω το περιεχόμενο της σελίδας;</summary>
-
-
-
+## Πως μπορώ να αντιγράψω το περιεχόμενο της σελίδας;
 
 Θέλετε να κάνετε αυτή την σελίδα δική σας;
 Εύκολο!
@@ -70,5 +58,3 @@
 Πιθανόν να μας εμφανίσει το παρακάτω παράθυρο. Πατάμε dismiss.
 
 ![Github Introduction](github_introduction13.png)
-
-</details>
