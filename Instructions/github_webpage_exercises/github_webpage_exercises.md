@@ -4,4 +4,3 @@
 
 https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/github_webpage/github_webpage.md
 
-![Github Webpage Exercises](github_webpage_exercises1.png)
