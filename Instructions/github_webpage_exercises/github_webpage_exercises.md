@@ -1,5 +1,11 @@
 # Ασκήσεις ιστοσελίδας
 
+
+<details>
+  <summary>Εισαγωγή</summary>
+
+
+
 Για να πραγματοποιήσουμε τις παρακάτω ασκήσεις, χρειάζεται πρώτα να έχουμε να έχουμε ολοκληρώσει την ιστοσελίδα του παρακάτω μαθήματος
 
 https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/github_webpage/github_webpage.md
@@ -7,6 +13,9 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 Θα κάνουμε τρεις αλλαγές στη σελίδα: θα προσθέσουμε ένα έκτο γλυκό, θα αλλάξουμε τα χρώματα του banner και θα αλλάξουμε τη φωτογραφία της γάτας
 
 ![Github Webpage Exercises](github_webpage_exercises1.png)
+
+</details>
+
 
 <details>
   <summary>Προσθήκη έκτου γλυκού</summary>
@@ -33,6 +42,10 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 
 </details>
 
+<details>
+  <summary>Αλλαγή χρωμάτων</summary>
+
+
 Επιστρέφουμε στο repository
 
 ![Github Webpage Exercises](github_webpage_exercises7.png)
@@ -56,6 +69,12 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 Πατάμε commit
 
 ![Github Webpage Exercises](github_webpage_exercises12.png)
+
+</details>
+
+<details>
+  <summary>Αλλαγή εικόνας</summary>
+
 
 Επιστρέφουμε στο repository
 
@@ -101,6 +120,14 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 
 ![Github Webpage Exercises](github_webpage_exercises23.png)
 
+</details>
+
+<details>
+  <summary>Τελικό αποτέλεσμα</summary>
+
+
 Και οι τρεις αλλαγές μας έχουν συμβεί!
 
 ![Github Webpage Exercises](github_webpage_exercises24.png)
+
+</details>
