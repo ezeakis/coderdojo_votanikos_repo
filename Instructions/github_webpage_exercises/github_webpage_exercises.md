@@ -8,9 +8,6 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 
 ![Github Webpage Exercises](github_webpage_exercises1.png)
 
-<details>
-  <summary>Προσθήκη έκτου γλυκού</summary>
-
 Η πρώτη αλλαγή θα γίνει στο αρχείο index.html. Το επιλέγουμε.
 
 ![Github Webpage Exercises](github_webpage_exercises2.png)
@@ -30,8 +27,6 @@ https://github.com/ezeakis/coderdojo_votanikos_repo/blob/master/Instructions/git
 Πατάμε commit
 
 ![Github Webpage Exercises](github_webpage_exercises6.png)
-
-</details>
 
 Επιστρέφουμε στο repository
 
